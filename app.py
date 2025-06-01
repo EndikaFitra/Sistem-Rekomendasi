@@ -38,6 +38,7 @@ def recommend_places(city, category, n_recommendations=5):
     return filtered_sorted, pd.DataFrame(), None
 
 # Streamlit UI
+st.set_page_config(page_title="Rekomendasi Tempat Wisata", layout="wide")
 st.title("🎯 Sistem Rekomendasi Tempat Wisata")
 
 cities = df['City'].unique()
